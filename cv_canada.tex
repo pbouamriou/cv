@@ -295,11 +295,6 @@
 		{#6}
 	}
 
-	\ifthenelse{\isempty{#7}}{}{
-		\vspace{9pt}
-		\cvtext{\textbf{Résultats :}}\\
-		{#7}
-	}
 	\vspace{14pt}
 }
 
@@ -367,9 +362,11 @@
 
 \cvskill{C++} {20+ ans} {1} \\[-4pt]
 
+\cvskill{Qt 5} {10+ ans} {0.85} \\[-4pt]
+
 \cvskill{Python} {10+ ans} {0.95} \\[-4pt]
 
-\cvskill{Java} {2+ ans} {0.6} \\[-4pt]
+\cvskill{Rust} {1+ an} {0.45} \\[-4pt]
 
 \cvskill{Javascript/Typescript} {5+ ans} {0.75} \\[-4pt]
 
@@ -383,20 +380,18 @@
 
 \cvskill{Linux Administration} {15+ ans} {0.95} \\[-4pt]
 
-\cvskill{Agilité} {10+ ans} {0.85} \\[-2pt]
+\cvskill{Design Patterns} {15+ ans} {0.8} \\[-4pt]
+
+\cvskill{UML} {15+ ans} {0.9} \\[-4pt]
+
+\cvskill{Git} {8+ ans} {0.85} \\[-4pt]
+
+\cvskill{Agilité} {10+ ans} {0.85} \\[-4pt]
 
 
 \vfill\null
 
-\cvsection{Langues}
 
-\cvskill{Français} {Natale} {1} \\[-4pt]
-
-\cvskill{Anglais} {A2} {0.5} \\[-4pt]
-
-\cvskill{Anglais Technique} {B1} {0.7} \\[-4pt]
-
-\vfill\null
 \cvsection{ME CONTACTER}
 	
 \icontext{MapMarker}{12}{11 TER Rue du Portereau, 44230 Saint-Sébastien-Sur-Loire}{black}\\[6pt]
@@ -410,6 +405,8 @@
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \newpage
+
+
 \cvsection{DIPLÔMES}
 
 \cvmetaevent
@@ -446,6 +443,28 @@
 \cvqrcode{0.5}
 
 %---------------------------------------------------------------------------------------
+%	LANGUES
+%----------------------------------------------------------------------------------------
+
+\newpage
+
+\cvsection{Langues}
+
+\cvskill{Français} {Natale} {1} \\[-4pt]
+
+\cvskill{Anglais Parlé} {A2} {0.5} \\[-4pt]
+
+\cvskill{Anglais Ecrit} {B1} {0.5} \\[-4pt]
+
+\cvskill{Anglais Technique} {B1} {0.7} \\[-4pt]
+
+\vfill\null
+
+\mbox{} % hotfix to place qrcode on the bottom when there are not other elements
+\vfill\null
+\cvqrcode{0.5}
+
+%---------------------------------------------------------------------------------------
 %	REFERENCES
 %----------------------------------------------------------------------------------------
 \newpage
@@ -456,7 +475,6 @@
 {\small Chef de Laboratoire (2008-2022)}
 {
 \iconemail{Envelope}{5}{\footnotesize thierry.nambot@thalesgroup.com}{thierry.nambot@thalesgroup.com}{black}\\
-\icontext{MobilePhone}{5}{\footnotesize +33 6 14 62 51 49}{black}
 }
 {}
 
@@ -465,7 +483,6 @@
 {\small Chef de Projet (2012-2020)}
 {
 \iconemail{Envelope}{5}{\footnotesize vincent.gregoire@thalesgroup.com}{vincent.gregoire@thalesgroup.com}{black}\\
-\icontext{MobilePhone}{5}{\footnotesize +33 6 14 62 51 49}{black}
 }
 {}
 
@@ -474,36 +491,12 @@
 {\small Chef de Projet (2008/2012)}
 {
 \iconemail{Envelope}{5}{\footnotesize nicolas.chevalier@thalesgroup.com}{nicolas.chevalier@thalesgroup.com}{black}\\
-\icontext{MobilePhone}{5}{\footnotesize +33 6 14 62 51 49}{black}
 }
 {}
+
 \mbox{} % hotfix to place qrcode on the bottom when there are not other elements
+
 \vfill\null
-\cvqrcode{0.5}
-
-\newpage
-\mbox{} % hotfix to place qrcode on the bottom when there are not other elements
-\vfill
-\cvqrcode{0.5}
-
-\newpage
-\mbox{} % hotfix to place qrcode on the bottom when there are not other elements
-\vfill
-\cvqrcode{0.5}
-
-\newpage
-\mbox{} % hotfix to place qrcode on the bottom when there are not other elements
-\vfill
-\cvqrcode{0.5}
-
-\newpage
-\mbox{} % hotfix to place qrcode on the bottom when there are not other elements
-\vfill
-\cvqrcode{0.5}
-
-\newpage
-\mbox{} % hotfix to place qrcode on the bottom when there are not other elements
-\vfill
 \cvqrcode{0.5}
 
 \end{leftcolumn}
@@ -526,7 +519,7 @@
 \vfill\null
 \cvsection{PROFIL}
 
-\cvtext{Architecte Logiciel MiddleWare / IHM Embarquée / Web (Front + Back Embarqué).\\
+\cvtext{Architecte Logiciel IHM Embarquée / MiddleWare / Web (Front + Back Embarqué).\\
 
 J'ai conçu de nombreux logiciels/frameworks et j'accompagne les équipes durant le processus complet de développement à travers des revues de code, la création d'outils, la mise en place d'environnements de développement et en partageant continuellement mes connaissances acquises par de la veille technologique.\\
 
@@ -545,24 +538,12 @@ Je spécifie les interfaces, effectue les choix technologiques (protocoles, lang
 	{Thales}
 	{Dans le cadre de la réalisation d'une nouvelle génération de modem radio Troposphère, j'ai participé à la mise en oeuvre d'une IHM Web pour configurer et superviser l'état du modem.}
 	{\cvlist{
-		\item Mise en place de l'environnement de développement et de test (Front + Back) dans le cloud Thales (Docker + Ansible)
-		\item Participation à la définition des interfaces externes du produit
-		\item Définition de l'architecture logicielle
-		\item Mise en place de l'architecture (Front + Back) 
-		\item Développement de la partie front et back
-		\item Suivi technique du développement
+		\item Spécification / Architecture / Mise en place de l'environnement / Développement / Formation
 	}}
 	{\cvlist {
-		\item C++17 pour le développement la partie back (embarquée sur le modem)
-		\item Docker + Ansible pour le déploiement de l'environnement de dev/test en 1 click
-		\item CMake pour la production Front + Back
-		\item Webpack pour la mise en paquet de la partie Front
-		\item HTML5/SCSS/Typescript pour la partie front
-		\item Python pour les tests de la partie front
-		\item Cypress pour les tests E2E (End To End)
-		\item LUA pour la simulation de la partie métier du Modem
-		\item Git pour la gestion de la configuration
-		\item Jenkins pour l'intégration continue
+		\item C++17 / CMake pour le Back, HTML5 / SCSS / Typescript pour le Front
+		\item Docker + Ansible pour le déploiement de l'environnement de Dev./Test en 1 click
+		\item Python / Cypress pour les tests E2E (End To End)
 		\item Linux Debian 11 (cible et natif)
 	}}
 	{\cvlist{
@@ -577,29 +558,17 @@ Je spécifie les interfaces, effectue les choix technologiques (protocoles, lang
 	{Thales}
 	{Dans le cadre de la restauration des équipements radio VHF/UHF de l'armée française (CONTACT), réalisation de l'ensemble des IHM (IHM locale et déport WEB) de ces équipements.}
 	{\cvlist{
-		\item Définition des interfaces
-		\item Ecriture des spécifications logicielles
-		\item Conception de l'architecture des IHM des différents postes radio (forte réutilisation)
+		\item Spécification / Architecture / Mise en place de l'environnement / Développement / Formation
 		\item Définition de la stratégie de Test
-		\item Réalisation du Framework de tests (tests automatiques)
-		\item Mise en place des premiers tests E2E (end to end)
-		\item Développement de la base architecturale de l'IHM embarquée
-		\item Enrichissement du Framework de l'IHM Web (partie Front)
-		\item Suivi technique du développement
-		\item Intervention en qualité d'expert embarqué sur des sujets de performance (temps réel)
-		\item Intégration de l'IHM dans la solution complète
+		\item Intégration sur cible
 	}}
 	{\cvlist {
-		\item C++11/Qt5/QMake pour le développement de l'IHM embarquée
-		\item Typescript/SCSS/HTML5/Webpack pour le développement de l'IHM Web (Front)
+		\item C++11 /Qt5 / QMake pour le développement de l'IHM embarquée
+		\item Typescript / SCSS / HTML5 / Webpack pour le développement de l'IHM Web (Front)
 		\item AppArmor pour la sécurisation des composants de l'IHM
-		\item Docker/Python/Cypress pour les tests
-		\item LUA pour la simulation de l'équipement radio
-		\item Git pour la gestion de la configuration
-		\item Jenkins pour l'intégration continue et la génération documentaire
+		\item Docker / Python / Cypress pour les tests
 		\item Processeur x86-64 / Linux Debian 10 (natif)
 		\item Processeur ARM Freescale iMX6 Duo / Linux Elinos 6.2 (cible)
-		\item Intégration Logicielle / Matérielle sur banc de test
 	}}
 	{\cvlist{
 		\item Livraison des deux premières versions système
@@ -612,18 +581,12 @@ Je spécifie les interfaces, effectue les choix technologiques (protocoles, lang
 	{Thales}
 	{Dans le but d'enrichir l'expérience utilisateur du poste radio militaire PR4G 9215, réalisation d'une IHM Web embarquée dans celui-ci pour l'exploiter à distance sur un PC, une tablette, ou un smartphone.}
 	{\cvlist{
-		\item Architecture de la partie front (application de type single page)
-		\item Implémentation du Framework Web réactif
-		\item Implémentation de l'IHM WEB
-		\item Implémentation d'une interface Websocket sur l'IHM locale 
-		\item Adaptation du Linux embarqué (buildroot) pour embarquer le serveur et les pages web
+		\item Architecture / Mise en place de l'environnement / Développement
 	}}
 	{\cvlist {
-		\item Typescript/SCSS/HTML5/Webpack pour le développement de l'IHM Web (Front)
-		\item C++11/Qt5/Websockets pour l'adaptation de l'IHM locale
+		\item Typescript / SCSS / HTML5 / Webpack pour le développement de l'IHM Web (Front)
+		\item C++11 / Qt5 / Websockets pour l'adaptation de l'IHM locale
 		\item Processeur ARM Microship SAMA5D4 (Cortex A5) / Linux Buildroot (cible)
-		\item Git pour la gestion de la configuration
-		\item Jenkins pour l'intégration continue
 	}}
 	{\cvlist{
 		\item Livraison du produit chez le premier client
@@ -635,16 +598,11 @@ Je spécifie les interfaces, effectue les choix technologiques (protocoles, lang
 	{Thales}
 	{Dans le cadre de la rénovation des équipements radio militaires VHF, réalisation d'un applicatif intégré dans l'équipement qui permet d'offrir des services de diffusion de positions GPS et d'envoi de messages courts.}
 	{\cvlist{
-		\item Architecture et conception de l'applicatif intégré
-		\item Mise en place de l'environnement de développement, de production et de tests
-		\item Initialisation du développement (Sprint 0)
-		\item Soutien à l'équipe de développement (relecture de code, conseils)
+		\item Architecture / Mise en place de l'environnement / Développement
 	}}
 	{\cvlist {
-		\item C++11 pour le développement
-		\item CMake pour la production
-		\item Git pour la gestion de la configuration
-		\item Jenkins pour l'intégration continue
+		\item C++11 / CMake pour le développement
+		\item Linux / Windows
 	}}
 	{\cvlist{
 		\item Intégration de l'applicatif dans l'équipement radio et livré au client (première version système)
@@ -656,24 +614,14 @@ Je spécifie les interfaces, effectue les choix technologiques (protocoles, lang
 	{Thales}
 	{Dans le cadre de l'évolution de l'IHM du poste radio militaire VHF PR4G, amélioration de l'expérience utilisateur en utilisant un écran LCD tactile en remplacement de l'écran 7 segments qui offrait une expérience datée.}
 	{\cvlist{
-		\item Réalisation du BSP Linux de la carte IHM (Microship SAMA5D4)
-		\item Mise en place de l'environnement de développement, de production et de tests
-		\item Architecture et conception de la solution
-		\item Développement de l'IHM
-		\item Développement du logiciel de programmation de l'équipement (installation des applicatifs)
+		\item Spécification / Architecture / Mise en place de l'environnement / Développement
+		\item Intégration sur cible
 	}}
 	{\cvlist {
-		\item C++11/Qt5 pour le développement de l'IHM
-		\item QMake pour la production
-		\item Git pour la gestion de la configuration
-		\item Jenkins pour l'intégration continue
-		\item Design Patterns
+		\item C++11 / Qt5 / QMake pour le développement de l'IHM
 		\item Processeur ARM Microship SAMA5D4 (Cortex A5) / Linux Buildroot (cible) / Kernel Linux 3.10 
 		\item Linux Debian 9 (natif)
-		\item Intégration Logicielle / Matérielle sur banc de test
-		\item Scripting (bash, ...) pour l'initialisation de la cible et installation des applicatifs
-		\item Python pour le logiciel de programmation des équipements
-		\item OpenSSL pour la signature des applicatifs à installer
+		\item Python / Scripting / OpenSSL pour le logiciel de programmation des équipements
 	}}
 	{\cvlist{
 		\item Equipements livré à plusieurs clients
@@ -685,18 +633,11 @@ Je spécifie les interfaces, effectue les choix technologiques (protocoles, lang
 	{Thales}
 	{Dans le cadre du développement d'un socle de messagerie militaire utilisant plusieurs média, soutien de l'ensemble des médias de communication (HF, VHF, LAN, RTC).}
 	{\cvlist{
-		\item Spécification et définition des interfaces
-		\item Conception des différents composants
-		\item Intervention sur les problèmes critiques (problème complexe ou correction urgente)
-		\item Soutien aux équipes (revus de code, formations)
+		\item Spécification / Architecture / Développement / Formation
 	}}
 	{\cvlist {
-		\item C++03/Boost pour le développement des composants
-		\item SCons pour la production
-		\item Clearcase pour la gestion de la configuration
-		\item UML pour la conception
-		\item Soap/XML/XSD pour la communication avec le socle de messagerie
-		\item TCL/TK pour les tests
+		\item C++03 / Boost / SCons pour le développement des composants
+		\item Soap / XML / XSD pour la communication avec le socle de messagerie
 		\item Windows XP
 	}}
 	{\cvlist{
@@ -709,22 +650,12 @@ Je spécifie les interfaces, effectue les choix technologiques (protocoles, lang
 	{SII / Thales}
 	{Dans le cadre du développement d'un socle de messagerie militaire utilisant plusieurs médias, réalisation du média HF.}
 	{\cvlist{
-		\item Spécification et définition des interfaces
-		\item Conception du plugin HF
-		\item Réalisation d'un Framework C++ de communication inter-processus asynchrone
-		\item Développement du plugin HF
-		\item Application du développement par le Model (UML)
-		\item Pilotage du développement du simulateur de réseau radio HF
-		\item Soutien aux équipes (revus de code, revus de conception, formations)
+		\item Spécification / Architecture / Mise en place de l'environnement / Développement / Formation
 	}}
 	{\cvlist {
-		\item C++03/Boost pour le développement du plugin HF et du Framework de communication
-		\item SCons pour la production
-		\item Clearcase pour la gestion de la configuration
-		\item UML/IBM Rose/IBM Rhapsody pour la conception et génération de code (classes et automates)
-		\item Soap/XML/XSD pour la communication avec le socle de messagerie
+		\item C++03 / Boost / SCons pour le développement du plugin HF et du Framework de communication
+		\item UML / IBM Rose / IBM Rhapsody pour la conception et génération de code (classes et automates)
 		\item Java pour le simulateur de réseau radio HF
-		\item TCL/TK pour les tests
 		\item Windows NT
 	}}
 	{\cvlist{
@@ -737,17 +668,10 @@ Je spécifie les interfaces, effectue les choix technologiques (protocoles, lang
 	{SII / Thales}
 	{Mise à jour d'un logiciel de messagerie multi-média (HF/VHF/RTG/LAN) pour l'armée française.}
 	{\cvlist{
-		\item Spécification et définition des interfaces
-		\item Identification des modifications de conception à apporter (migration vers une interface DCOM)
-		\item Amélioration de la conception
-		\item Développement des améliorations d'architecture et des enrichissements fonctionnels 
-		\item Soutien aux équipes (aide régulière)
+		\item Spécification / Architecture / Développement / Tests
 	}}
 	{\cvlist {
 		\item C++ pour le développement
-		\item Clearcase pour la gestion de la configuration
-		\item Interfaces DCOM
-		\item Design Patterns pour améliorer la conception
 		\item Windows NT
 	}}
 	{\cvlist{
@@ -760,23 +684,11 @@ Je spécifie les interfaces, effectue les choix technologiques (protocoles, lang
 	{SII / Thales}
 	{Dans le cadre de l'évolution du poste radio militaire VHF PR4G, ajout d'un coupleur IP permettant d'exploiter l'équipement radio à travers les protocoles IP (SNMP, UDP, TCP/IP)}
 	{\cvlist{
-		\item Conception du logiciel embarqué sur la carte IP
-		\item Mise en place de l'environnement de développement
-		\item Participation au portage de la stack BSD sur la cate IP 
-		\item Développement et test de plusieurs protocoles radios
-		\item Aide à l'intégration
-		\item Relectures de code
+		\item Conception / Mise en place environnement / Développement
 	}}
 	{\cvlist {
-		\item C++ embarqué
-		\item Unix - Sun Solaris (natif)
-		\item PSOS (cible)
-		\item Clearcase pour la gestion de la configuration
-		\item TCP/IP pour le portage de la stack
-		\item Make pour la génération de l'application
-		\item UML pour la conception
-		\item Scripting (bash/perl) pour automatiser certaines procédures
-		\item Design Patterns
+		\item C++ / Make pour le développement
+		\item Unix - Sun Solaris (natif) / PSOS (cible)
 	}}
 	{\cvlist{
 		\item Depuis 2003, l'armée française utilise le poste radio PR4G à travers les protocoles IP pour son administration et pour du transfert de données.
@@ -788,20 +700,11 @@ Je spécifie les interfaces, effectue les choix technologiques (protocoles, lang
 	{SII / Thales Training And Simulation}
 	{Dans le cadre du Projet Helisim de simulation d'hélicoptère Tigre (Eurocopter), réalisation du logiciel du poste d'instruction.}
 	{\cvlist{
-		\item Spécification
-		\item Choix d'architecture
-		\item Conception (UML)
-		\item Développement des couches métiers et de communications avec le calculateur de boucles de vol
-		\item Intégration
-		\item Recettes
+		\item Spécification / Conception / Mise en place de l'environnement / Développement / Recettes
 	}}
 	{\cvlist {
-		\item C++/MFC pour le développement de l'IHM
-		\item Python pour le développement des certains traitements métiers (utilisation de librairies C++ pour les performances) 
-		\item Windows NT (PC du poste instructeur)
-		\item VxWorks (Simulation et traitements métiers)
-		\item Design Patterns
-		\item Clearcase pour la gestion de la configuration
+		\item C++ / MFC pour le développement IHM et Python pour le traitement des données métier
+		\item Windows NT (PC du poste instructeur) / VxWorks (Simulation et traitements métiers)
 	}}
 	{\cvlist{
 		\item Le simulateur d'hélicoptère Tigre est parfaitement opérationnel au centre de formation d'Hélisim.
@@ -813,15 +716,11 @@ Je spécifie les interfaces, effectue les choix technologiques (protocoles, lang
 	{SII / Thales Training And Simulation}
 	{Dans le cadre des ventes de simulateurs d'Airbus A320, A330 et A340 à différentes compagnie aériennes, adaptation du logiciel d'instruction par rapport aux besoins spécifiés par les clients.}
 	{\cvlist{
-		\item Spécification
-		\item Développement des spécificités et amélioration de l'existant
-		\item Intégration
-		\item Recettes sur site (Espagne, Angleterre, Belgique, France)
+		\item Spécification / Développement / Recettes
 	}}
 	{\cvlist {
-		\item C/SGMLS pour le développement de l'IHM
-		\item Unix Irix (cible) 
-		\item RCS/VCS pour la gestion de la configuration
+		\item C / SGMLS pour le développement de l'IHM
+		\item Unix Irix (natif et cible) 
 	}}
 	{\cvlist{
 		\item Le simulateur d'hélicoptère Tigre est parfaitement opérationnel au centre de formation d'Hélisim.
@@ -830,78 +729,7 @@ Je spécifie les interfaces, effectue les choix technologiques (protocoles, lang
 % hotfixes to create fake-space to ensure the whole height is used
 \mbox{}
 \vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
+
 \end{rightcolumn}
 \end{paracol}
 \end{document}
